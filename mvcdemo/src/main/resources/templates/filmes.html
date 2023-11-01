@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th ="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>MVC Demo</title>
+</head>
+<body>
+ <h1>Lista de Filmes</h1>
+ <table>
+     <thread>
+         <tr>
+             <th>Título</th>
+             <th>Gênero</th>
+         </tr>
+     </thread>
+     <tbody>
+     <tr th:each="filmes : ${filmes}">
+         <td th:text="${filmes.titulo}"></td>
+         <td th:text="${filmes.genero}"></td>
+     </tr>
+     </tbody>
+ </table>
+ <hr>
+</body>
+</html>
